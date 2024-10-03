@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ucp-wallet
+
+  # Datasource Configuration
+  datasource:
+    url: jdbc:oracle:thin:@ibexdb_tp?TNS_ADMIN=/Users/atael/Downloads/Wallet_IBEXDB
+    username: ADMIN
+    password: kH0z9!SK-9inedBP
+    driver-class-name: oracle.jdbc.OracleDriver
+    type: oracle.ucp.jdbc.PoolDataSource
+    oracleucp:
+      connection-factory-class-name: oracle.jdbc.pool.OracleDataSource
+      connection-pool-name: UCPWalletConnectionPool
+      initial-pool-size: 15
+      min-pool-size: 10
+      max-pool-size: 30
